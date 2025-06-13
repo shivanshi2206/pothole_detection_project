@@ -1,0 +1,49 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Ignore Python environments and binaries
+pothole_detection_deployment/civil-infra-backend/Lib/
+*.dll
+*.lib
+
+
+# Virtual environment
+venv/
+env/
+ENV/
+venv.bak/
+*.pyenv/
+pyvenv.cfg
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# FastAPI and Python-related
+*.log
+*.sqlite3
+*.db
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+*.tgz
+
+
+# Uploads & outputs
+uploads/
+outputs/
+runs/
+
+# System files
+.DS_Store
+Thumbs.db
+
+lib/
