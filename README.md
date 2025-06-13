@@ -1,13 +1,12 @@
 # InfraScan
 
-**InfraScan** is an AI-powered pothole detection system that combines a FastAPI backend running a YOLOv8 segmentation model and a React-based frontend. It allows users to upload road images or videos and returns annotated outputs highlighting potholes.
+**InfraScan** is an AI-powered pothole detection system that combines a FastAPI backend running a Deep learnng based segmentation model and a React-based frontend. It allows users to upload road images or videos and returns annotated outputs highlighting potholes.
 
 ## Features
 
 - Fast and accurate pothole detection in images and videos  
-- YOLOv8-based segmentation with real-time inference  
-- Frontend built with React for smooth user interaction  
-- Concurrent execution of backend and frontend in a single terminal  
+- Deep Learning segmentation with real-time inference(Yolov8, Unet+EfficientNet) 
+- Frontend built with React for smooth user interaction with Concurrent execution of backend and frontend in a single terminal  
 
 ## Prerequisites
 
@@ -17,9 +16,7 @@ Ensure the following tools are installed on your system:
   https://www.python.org/downloads/  
 - Node.js 14 or above  
   https://nodejs.org/en/download  
-- npm (included with Node.js)  
-- Git (optional, for cloning the repository)  
-  https://git-scm.com/downloads  
+- npm (included with Node.js)   
 
 ## Project Structure
 
@@ -40,7 +37,7 @@ POTHOLE_DETECTION/
 
 Using Git:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/shivanshi2206/pothole_detection_project.git
 cd pothole_detection
 ```
 
@@ -103,11 +100,7 @@ This will start:
 
 ## Notes
 
-- Place your trained YOLOv8 model weights (`best.pt`) inside the `civil-infra-backend` folder.  
+- Place your trained model weights (`best.pt`) inside the `civil-infra-backend` folder.  
 - The application supports image and video uploads.  
 - All outputs are served via `/outputs` and `/runs/segment`.  
 - CORS is enabled for local development.  
-
-## Further Information
-
-For additional testing and deployment instructions, refer to the accompanying `FitFormAI.pdf`.
