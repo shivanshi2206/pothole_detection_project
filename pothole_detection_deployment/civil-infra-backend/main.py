@@ -114,6 +114,5 @@ async def predict(file: UploadFile = File(...), media_type: str = Form(...)):
         return {"processed_video_url": relative_url}
 
 
-# Static mounts
 app.mount("/outputs", StaticFiles(directory=OUTPUT_DIR), name="outputs")
 app.mount("/runs/segment", StaticFiles(directory="runs/segment"), name="segment")
