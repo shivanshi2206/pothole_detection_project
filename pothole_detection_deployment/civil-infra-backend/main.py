@@ -37,6 +37,7 @@ RUNS_DIR = Path("runs/segment/predict")
 
 UPLOAD_DIR.mkdir(exist_ok=True)
 OUTPUT_DIR.mkdir(exist_ok=True)
+RUNS_DIR.mkdir(parents=True, exist_ok=True)
 
 # Load model
 model = YOLO(MODEL_PATH)

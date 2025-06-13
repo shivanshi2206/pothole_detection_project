@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+pillow
+opencv-python-headless
+ultralytics
+numpy
+python-dotenv
+imageio-ffmpeg
