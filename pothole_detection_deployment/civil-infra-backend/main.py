@@ -86,8 +86,7 @@ async def predict(file: UploadFile = File(...), media_type: str = Form(...)):
             save=True,
             project="runs/segment",
             name="predict",
-            vid_stride=5,
-            imgsz=480,
+            imgsz=360,
             exist_ok=True
         )
 
