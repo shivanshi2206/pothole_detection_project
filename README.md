@@ -100,7 +100,7 @@ This will start:
 
 ## Notes
 
-- Place your trained model weights (`best.pt`) inside the `civil-infra-backend` folder.  
+- Place your trained model weights inside the `civil-infra-backend` folder.  
 - The application supports image and video uploads.  
 - All outputs are served via `/outputs` and `/runs/segment`.  
 - CORS is enabled for local development.  
